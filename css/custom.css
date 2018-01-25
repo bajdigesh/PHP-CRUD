@@ -1,0 +1,37 @@
+/* ===========================================================================
+COMMON STYLES
+=========================================================================== */
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+}
+
+/* ===========================================================================
+AUTH  STYLES
+=========================================================================== */
+.login, .register {
+	background: radial-gradient(#fff 0%, #f2f2f2 100%);
+}
+.auth-form {
+	padding: 20px;
+	background: rgba(255,255,255,0.7);
+	box-shadow: 0 3px 6px #eee;
+	position: relative;
+	overflow: hidden;
+}
+.auth-form:before {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: -40px;
+	background: rgba(226,226,226,0.1);
+	content: "";
+	transform: skewX(-15deg);
+}
+.form-contents {
+	position: relative;
+	z-index: 1;
+}
